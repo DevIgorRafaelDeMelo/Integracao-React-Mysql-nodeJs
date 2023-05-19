@@ -1,0 +1,31 @@
+.App{
+  text-align: center;
+  display: block;
+}
+.flex{
+  display: flex;
+}
+.card-input{
+  width: 80%;
+  margin: auto;
+  margin-top: 200px;
+  padding: 120px 0px;
+  background: rgb(248, 248, 248);
+  border-radius: 30px;
+
+}
+input{
+  padding: 10px;
+  background: white;
+  margin-bottom: 10px;
+}
+.text-1{
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+.btn-send{
+  padding: 15px 60px;
+  background: rgb(2, 248, 22);
+  border: none;
+  margin-top: 20px;
+}
