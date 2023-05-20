@@ -13,6 +13,25 @@ const db = mysql.createPool({
 app.use(express.json());
 app.use(cors());
 
+app.get("/getCards",(req,res)=>{
+    let SQL = "SELECT * FROM palavras";
+
+    db.query(SQL, (err,result) =>{
+        if(err) console.log(err);
+        else res.send(result);
+    });
+});
+
+app.post("/delet" , (req,res) =>{
+    const id = req.body.id;
+    db.query("DELETE FROM palavras WHERE idpalavras = ?;"[id],
+    (err,result)=>{
+        if(err){
+            res.send(err);   
+        }
+    })
+})
+
 app.post("/register",(req ,res) => {
     const nome = req.body.name;
     const traduz = req.body.cost; 
