@@ -22,15 +22,17 @@ app.get("/getCards",(req,res)=>{
     });
 });
 
+
 app.post("/delet" , (req,res) =>{
     const id = req.body.id;
-    db.query("DELETE FROM palavras WHERE idpalavras = ?;"[id],
+    db.query("DELETE FROM palavras WHERE idpalavras = ?;",[id],
     (err,result)=>{
         if(err){
             res.send(err);   
         }
     })
 })
+
 
 app.post("/register",(req ,res) => {
     const nome = req.body.name;
