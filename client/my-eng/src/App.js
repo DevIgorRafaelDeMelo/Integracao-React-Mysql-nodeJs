@@ -5,14 +5,10 @@ import Table from './componets/Table';
 import Cadastro from './componets/Cadastro';
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import Home from './componets/Home';
+import Jogo from './componets/Jogo';
 
 function App() {
 
-  
-
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
 
   return (
     <div className="App">
@@ -23,6 +19,7 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path='/cadastro' element={<Cadastro/>} />
             <Route path='/table' element={<Table/>} />
+            <Route path='/jogo' element={<Jogo/>} />
           </Routes>
         </Router>
 

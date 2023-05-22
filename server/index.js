@@ -22,6 +22,15 @@ app.get("/getCards",(req,res)=>{
     });
 });
 
+app.get("/getCard",(req,res)=>{
+    let SQL = "SELECT * FROM palavras";
+
+    db.query(SQL, (err,result) =>{
+        if(err) console.log(err);
+        else res.send(result);
+    });
+});
+
 
 app.post("/delet" , (req,res) =>{
     const id = req.body.id;

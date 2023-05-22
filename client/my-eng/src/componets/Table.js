@@ -17,7 +17,6 @@ export default function Table() {
 
     useEffect(()=>{
         handleClickAtualiza()
-    
     })
     
     return <>
