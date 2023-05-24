@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import Axios from 'axios';
 import Table from './componets/Table';
 import Cadastro from './componets/Cadastro';
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'

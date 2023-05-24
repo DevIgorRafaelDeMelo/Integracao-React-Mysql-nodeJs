@@ -1,11 +1,11 @@
 import react from "react"
-import './Card.css';
+import './Cadastrar.css';
 import Axios from "axios";
 import { useState } from "react";
 import Home from "./Home";
 
 export default function Cadastro() {
-    const [values, setValues] = useState();
+    const [values, setValues] = useState("");
 
 
     const handleChangeValues = (value) => {
@@ -24,22 +24,25 @@ export default function Cadastro() {
         }).then((resposta) => {
             console.log(resposta);
         });
+        alert("Cadastrado")
+        
     };
+
 
     return <>
         <Home/>
         <div className='card-input'>
-            <div className='text-1'>Ingles</div>
+            <div className='text-1'>Inglês</div>
             <input type='text'
                 name="name"
-                className='name-eng'
+                className='name'
                 onChange={handleChangeValues}
             />
             <br />
-            <div className='text-1'>tradução</div>
+            <div className='text-1'>Portugues</div>
             <input type='text'
                 name="cost"
-                className='name-pt'
+                className='name'
                 onChange={handleChangeValues}
             />
             <br />

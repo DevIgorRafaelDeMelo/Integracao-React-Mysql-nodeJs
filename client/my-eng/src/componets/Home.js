@@ -1,13 +1,18 @@
-import './Card.css';
+import React from 'react';
+import './Home.css';
 import { Link } from "react-router-dom";
+import eng from '../img/eng.jpg'
+import Axios from "axios";
 
 export default function Home() {
 
-    return <>
-        <Link to="/" >Home</Link>
-        <Link to="/jogo" >jogo</Link>
-        <Link to="/cadastro" >Cadastrar</Link>
-        <Link to="/Table"  >Table</Link>
+    return <section className='Banner--menu'>
+        <Link to="/" ><img className='img--logo' src={eng}></img></Link>
+        <div className='Menu--link'>
+            <Link className='Btn--link' to="/jogo" >Aprender</Link>
+            <Link className='Btn--link' to="/cadastro" >Cadastrar</Link>
+            <Link className='Btn--link' to="/Table"  >Palavras</Link>
+        </div>
 
-    </>
+    </section>
 }

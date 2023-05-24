@@ -2,12 +2,13 @@ import react, { useEffect } from "react"
 import Axios from "axios";
 import { useState } from "react";
 import Home from "./Home";
+import './jogo.css';
 
 export default function Jogo() {
 
     const [valores, setValores] = useState();
-    const [count, setCount] = useState();
-    
+    const [count, setCount] = useState(0);
+
     useEffect(() => {
         Axios.get("http://localhost:3001/getCard").then((response) => {
             setValores(response.data);
@@ -17,7 +18,7 @@ export default function Jogo() {
     var arr = [0, 1, 2, 3, 4]
     var palavras = [];
     var num;
-
+    var contador
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
         while (0 !== currentIndex) {
@@ -38,18 +39,34 @@ export default function Jogo() {
                 console.log(palavras[num])
                 console.log(props)
                 if (palavras[num] == props.id) {
-                    
+
                     var div = document.createElement("div");
                     var res = document.getElementById("Res")
-                    var acerto = '<div>Acerto</div>'
+                    var acerto = '<div>Correta !!!</div>'
+                    res.innerHTML = acerto
+                    setTimeout(function () {
+                        {   
+                            var res = document.getElementById("Res")
+                    var acerto = ''
                     res.innerHTML= acerto
-                    setTimeout(function() {
-                        {
-                            setCount(count+1);
+                            setCount(count + 1);
                         }
-                      }, 1000);
+                    }, 1500);
 
-                }else(alert("Erro"))
+                } else {
+                    var div = document.createElement("div");
+                    var res = document.getElementById("Res")
+                    var acerto = '<div>Errada !!!</div>'
+                    res.innerHTML = acerto
+                    setTimeout(function () {
+                        {
+                            var res = document.getElementById("Res")
+                            var acerto = ''
+                            res.innerHTML = acerto
+                            setCount(count + 1);
+                        }
+                    }, 1500);
+                }
             }
         }
 
@@ -67,8 +84,8 @@ export default function Jogo() {
 
 
         return <>
-            <div className="Card--Palavras">
-                <div className="Palavra--Chave">{typeof valores !== "undefined" && valores.map((value) => {
+            <div >
+                <div className="Palavras--Chave">{typeof valores !== "undefined" && valores.map((value) => {
                     if (value.idpalavras == palavras[num + arr[0]]) {
                         return <>
                             <Card
@@ -80,7 +97,7 @@ export default function Jogo() {
                         </>
                     }
                 })}</div>
-                <div className="Palavra--Chave">{typeof valores !== "undefined" && valores.map((value) => {
+                <div className="Palavras--Chave">{typeof valores !== "undefined" && valores.map((value) => {
                     if (value.idpalavras == palavras[num + arr[1]]) {
                         return <>
                             <Card
@@ -91,7 +108,7 @@ export default function Jogo() {
                         </>
                     }
                 })}</div>
-                <div className="Palavra--Chave">{typeof valores !== "undefined" && valores.map((value) => {
+                <div className="Palavras--Chave">{typeof valores !== "undefined" && valores.map((value) => {
                     if (value.idpalavras == palavras[num + arr[2]]) {
                         return <>
                             <Card
@@ -102,7 +119,7 @@ export default function Jogo() {
                         </>
                     }
                 })}</div>
-                <div className="Palavra--Chave">{typeof valores !== "undefined" && valores.map((value) => {
+                <div className="Palavras--Chave">{typeof valores !== "undefined" && valores.map((value) => {
                     if (value.idpalavras == palavras[num + arr[3]]) {
                         return <>
                             <Card
@@ -113,7 +130,7 @@ export default function Jogo() {
                         </>
                     }
                 })}</div>
-                <div className="Palavra--Chave">{typeof valores !== "undefined" && valores.map((value) => {
+                <div className="Palavras--Chave">{typeof valores !== "undefined" && valores.map((value) => {
                     if (value.idpalavras == palavras[num + arr[4]]) {
                         return <>
                             <Card
@@ -142,18 +159,18 @@ export default function Jogo() {
 
                 if (value.idpalavras == palavras[num]) {
                     return <>
-                        <Card
+                        <div className="palavra--chave"
                             key={value.idpalavras}
                             id={value.idpalavras}
                             name={value.namept}
                             eng={value.nameeng}
-                        ></Card>
+                        >{value.namept}</div>
                         <Options>
                         </Options>
                     </>
                 }
             })}
-            <div id="Res" >Qual está correta ?</div>
+            <div id="Res" ></div>
         </>
     })
 

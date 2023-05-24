@@ -1,0 +1,22 @@
+.img--logo{
+    height: 30px;
+    width: 60px;
+}
+.Banner--menu{
+    display: flex;
+    padding: 10px;
+}
+.Menu--link{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Btn--link{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    background: rgba(0, 125, 141, 0.651);
+    text-decoration: none;
+}
+.Text--question{
+    text-align: center;
+}

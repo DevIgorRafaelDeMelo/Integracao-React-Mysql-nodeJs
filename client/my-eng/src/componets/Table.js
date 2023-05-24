@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import react from "react"
-import './Card.css';
 import Axios from "axios";
 import Card from './cardPalavras';
 import Home from './Home';

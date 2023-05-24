@@ -1,0 +1,11 @@
+.Tabela--palavras{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+.Btn--delet{
+    height: 20px;
+    width:  20px;
+}

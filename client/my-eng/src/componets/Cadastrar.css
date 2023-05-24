@@ -1,0 +1,24 @@
+.card-input{
+    text-align: center;
+    margin-top: 250px;
+
+}
+.text-1{
+    font-size: 30px;
+}
+.name{
+    padding: 15px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: rgb(54, 54, 54);
+}
+.btn-send{
+    margin-top: 40px;
+    border: none;
+    background:rgba(0, 125, 141, 0.651);
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: white;
+}

@@ -1,0 +1,39 @@
+.Card--Palavras{
+    background: rgb(187, 0, 0);
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+  }
+  .Palavra--Chav{
+    text-align: center;
+    background: rgba(97, 97, 97, 0.658);
+    width: 20%;
+    margin: auto;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .palavra--chave{
+    background: rgb(255, 255, 255);
+    width: 30%;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 60px;
+    color: rgb(39, 39, 39);
+    margin-bottom: 50px;    
+    text-align: center;
+}
+
+#Res{
+    text-align: center;
+    margin-top: 150px;
+    font-size: xx-large;
+    color: rgba(247, 247, 247, 0.986);
+}
