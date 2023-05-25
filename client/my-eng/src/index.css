@@ -1,5 +1,18 @@
 body{
     margin: 0%;
     padding: 0%;
-    background: rgb(2, 214, 221);
+    background: hsla(217, 100%, 50%, 1);
+
+    background: linear-gradient(225deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(225deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(225deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    
+
 }

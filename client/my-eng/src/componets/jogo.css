@@ -9,7 +9,16 @@
   }
   .Palavra--Chav{
     text-align: center;
-    background: rgba(97, 97, 97, 0.658);
+    background: hsla(198, 93%, 52%, 1);
+
+    background: linear-gradient(225deg, hsla(198, 93%, 52%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+
+    background: -moz-linear-gradient(225deg, hsla(198, 93%, 52%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+
+    background: -webkit-linear-gradient(225deg, hsla(198, 93%, 52%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#14B3F7", endColorstr="#0062FF", GradientType=1 );
+    
     width: 20%;
     margin: auto;
     border-radius: 60px;
@@ -17,6 +26,11 @@
     margin-top: 10px;
     margin-bottom: 20px;
     color: rgb(255, 255, 255);
+  }
+  .Palavra--Chav:hover{
+    cursor: pointer;
+    background:rgb(0, 169, 241)
+
   }
   .palavra--chave{
     background: rgb(255, 255, 255);
@@ -33,7 +47,7 @@
 
 #Res{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 10px;
     font-size: xx-large;
-    color: rgba(247, 247, 247, 0.986);
+    color: rgba(20, 20, 20, 0.986);
 }

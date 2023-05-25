@@ -1,11 +1,20 @@
 .Tabela--palavras{
     display: flex;
-    width: 70%;
+    width: 30%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: rgb(230, 230, 230);
     justify-content: space-between;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Tabela--palavras:hover{
+    background: rgb(192, 192, 192);
 }
 .Btn--delet{
     height: 20px;
     width:  20px;
+    color: rgb(104, 104, 104);
 }

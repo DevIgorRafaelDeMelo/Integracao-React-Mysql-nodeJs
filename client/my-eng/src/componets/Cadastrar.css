@@ -1,10 +1,11 @@
 .card-input{
     text-align: center;
-    margin-top: 250px;
+    margin-top: 150px;
 
 }
 .text-1{
     font-size: 30px;
+    color: rgb(26, 26, 26);
 }
 .name{
     padding: 15px;
@@ -12,12 +13,20 @@
     margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
-    color: rgb(54, 54, 54);
+    color: rgb(22, 22, 22);
 }
 .btn-send{
     margin-top: 40px;
     border: none;
-    background:rgba(0, 125, 141, 0.651);
+    background: hsla(198, 93%, 52%, 1);
+
+background: linear-gradient(225deg, hsla(198, 93%, 52%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(225deg, hsla(198, 93%, 52%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(225deg, hsla(198, 93%, 52%, 1) 0%, hsla(217, 100%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#14B3F7", endColorstr="#0062FF", GradientType=1 );
     padding: 10px 50px;
     border-radius: 10px;
     color: white;

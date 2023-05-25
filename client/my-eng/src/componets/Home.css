@@ -1,22 +1,22 @@
 .img--logo{
     height: 30px;
     width: 60px;
+    margin-bottom: 15px;
 }
 .Banner--menu{
-    display: flex;
-    padding: 10px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
 }
 .Menu--link{
-    justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .Btn--link{
+    margin: 15px;
+    text-align: center;
+    border-radius: 6px;
     padding: 15px;
     color: rgb(255, 255, 255);
-    margin-left: 10px;
-    background: rgba(0, 125, 141, 0.651);
+    background: rgb(0, 106, 228);
     text-decoration: none;
-}
-.Text--question{
-    text-align: center;
 }
